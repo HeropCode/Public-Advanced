@@ -26,7 +26,7 @@
 ```
 
 ### prefixfree
-<http://leaverou.github.io/prefixfree/>
+<https://github.com/LeaVerou/prefixfree>
 ```html
 <script src="js/lib/prefixfree.min.js"></script>
 ```
