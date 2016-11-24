@@ -1,9 +1,9 @@
 # Public Advanced(중급반)
 중급반 학생을 위한 프로젝트 폴더
 
-### Libraries
+## JavaScript Libraries
 
-#### ie9
+### ie9
 <https://code.google.com/archive/p/ie7-js/>
 ```js
 <!--[if lt ie 9]>
@@ -11,7 +11,7 @@
 <![endif]-->
 ```
 
-#### respond
+### respond
 <https://github.com/scottjehl/Respond>
 ```js
 <!--[if lt ie 9]>
@@ -19,26 +19,26 @@
 <![endif]-->
 ```
 
-#### modernizr
+### modernizr
 <https://modernizr.com/>
 ```js
 <script src="js/lib/modernizr-2.8.3.min.js"></script>
 ```
 
-#### prefixfree
+### prefixfree
 <http://leaverou.github.io/prefixfree/>
 ```js
 <script src="js/lib/prefixfree.min.js"></script>
 ```
 
-#### jQuery
+### jQuery
 <http://jquery.com/>
 ```js
 <script src="js/lib/jquery-1.10.1.min.js"></script>
 ```
 
-#### jQuery.easing
+### jQuery.easing
 <https://github.com/gdsmith/jquery.easing>
 ```js
-<script src="js/lib/jquery.easing.1.3.min.js"></script>
+<script src="js/lib/jquery.easing.min.js"></script>
 ```
