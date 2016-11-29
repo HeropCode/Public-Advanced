@@ -112,6 +112,20 @@ etc...
 **`minimum-scale=1`**
 :  사용자가 디바이스를 '축소'할 수 있는 최대치의 값(최대 10배)
 
+### 오픈 그래프(The Open Graph protocol)
+
+웹페이지가 소셜 미디어로 공유될 때 우선적으로 활용되는 정보
+
+[The Open Graph protocol 추가 속성](http://ogp.me/)
+
+```html
+<meta property="og:type" content="website">
+<meta property="og:title" content="웹페이지의 제목">
+<meta property="og:description" content="웹페이지의 간단한 설명">
+<meta property="og:image" content="웹페이지의 대표 이미지 URL">
+<meta property="og:url" content="웹페이지 URL">
+```
+
 ### Favicon(파비콘, favorites icon)
 
 웹페이지를 나타내는 아이콘, 웹페이지의 로고를 설정
@@ -119,6 +133,15 @@ etc...
 IE6 ~ IE10 버전은 'public' 루트에 `favicon.ico` 파일을 위치하면 자동으로 로딩하기 때문에 `<link>` 를 작성할 필요가 없음.
 
 IE11 버전은 `png` 파일 사용.
+
+```html
+<link rel="icon" href="favicon.png"/>
+<link rel="apple-touch-icon-precomposed" href="favicon.png"/>
+<!--<link rel="shortcut icon" href="favicon.ico" />-->
+```
+
+**`rel="apple-touch-icon-precomposed"`**
+:  iOS 2.0 / Android 2.1 이상 Touch Icon (192x192 / 158x158)
 
 ### 조건부 주석(Conditional Comments)
 
@@ -137,23 +160,16 @@ IE 각 버전에 맞는 기능이나 파일, 디자인 등의 별도 삽입을 �
 
 | 기호 | 뜻 | 예시 | 예시 해석 |
 |:---:|:---:|:---:|:---:|
-| `!` | 부정(not) | `<!--[if !IE]>` | IE브라우저가 아닐 때 |
-| `lt` | 작다, 미만(less than) | `<!--[if lt IE 9]>` | IE9 미만 |
-| `lte` | 작거나 같다, 이하(less than equal) | `<!--[if lte IE 8]>` | IE8 이하 |
-| `gt` | 크다, 초과(greater than) | `<!--[if gt IE 6]>` | IE6 초과 |
-| `gte` | 크거나 같다, 이상(greater than equal) | `<!--[if gte IE 7]>` | IE7 이상 |
+| `!` | 부정<br/>(not) | `<!--[if !IE]><![endif]-->` | IE브라우저가 아닐 때 |
+| `lt` | 작다, 미만<br/>(less than) | `<!--[if lt IE 9]><![endif]-->` | IE9 미만 |
+| `lte` | 작거나 같다, 이하<br/>(less than equal) | `<!--[if lte IE 8]><![endif]-->` | IE8 이하 |
+| `gt` | 크다, 초과<br/>(greater than) | `<!--[if gt IE 6]><![endif]-->` | IE6 초과 |
+| `gte` | 크거나 같다, 이상<br/>(greater than equal) | `<!--[if gte IE 7]><![endif]-->` | IE7 이상 |
 | `()` |  |  |  |
-| `&` | 그리고(and) | `<!--[if (gt IE 6) & (lte IE 9)]>` | IE6 초과 ~ IE9 이하 |
-| `|` | 또는(or) | `<!--[if (IE 7) | (IE 9)]>`<br>`<!--[if IE 7 | IE 9]>` | IE7 또는 IE9 |
+| `&` | 그리고<br/>(and) | `<!--[if (gt IE 6) & (lte IE 9)]><![endif]-->` | IE6 초과 ~ IE9 이하 |
+| `|` | 또는<br/>(or) | `<!--[if (IE 7) | (IE 9)]><![endif]-->`<br/>`<!--[if IE 7 | IE 9]><![endif]-->` | IE7 또는 IE9 |
 
-```html
-<link rel="icon" href="favicon.png"/>
-<link rel="apple-touch-icon-precomposed" href="favicon.png"/>
-<!--<link rel="shortcut icon" href="favicon.ico" />-->
-```
 
-**`rel="apple-touch-icon-precomposed"`**
-:  iOS 2.0 / Android 2.1 이상 Touch Icon (192x192 / 158x158)
 
 ## JavaScript Libraries(Plugins)
 
