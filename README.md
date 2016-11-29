@@ -122,11 +122,11 @@ etc...
 [더 많은 오픈 그래프 속성 보기](http://ogp.me/)
 
 ```html
-<meta property="og:type" content="website">
-<meta property="og:title" content="웹페이지의 제목">
-<meta property="og:description" content="웹페이지의 간단한 설명">
-<meta property="og:image" content="웹페이지의 대표 이미지 URL">
-<meta property="og:url" content="웹페이지 URL">
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="웹페이지의 제목"/>
+<meta property="og:description" content="웹페이지의 간단한 설명"/>
+<meta property="og:image" content="웹페이지의 대표 이미지 URL"/>
+<meta property="og:url" content="웹페이지 URL"/>
 ```
 
 ### 트위터 카드(Twitter Cards)
@@ -136,11 +136,11 @@ etc...
 [더 많은 트위터 카드 보기](https://dev.twitter.com/cards/overview)
 
 ```html
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="웹페이지의 제목">
-<meta name="twitter:description" content="웹페이지의 간단한 설명">
-<meta name="twitter:image" content="웹페이지의 대표 이미지 URL">
-<meta name="twitter:url" content="웹페이지 URL">
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="웹페이지의 제목"/>
+<meta name="twitter:description" content="웹페이지의 간단한 설명"/>
+<meta name="twitter:image" content="웹페이지의 대표 이미지 URL"/>
+<meta name="twitter:url" content="웹페이지 URL"/>
 ```
 
 ### Favicon(파비콘, favorites icon)
@@ -174,7 +174,7 @@ IE11 버전은 `.png` 사용.
 
 ![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/dribbble_icon_16.png)
 
-크롬 브라우저(windows), 크롬 앱(Android), 네이버 앱(Android) 화면 
+크롬 앱(Android), 네이버 앱(Android), 크롬 브라우저(windows) 화면 
 
 ![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/favicon_desc4.jpg)
 
@@ -205,11 +205,8 @@ IE 각 버전에 맞는 기능이나 파일, 디자인 등의 별도 삽입을 �
 | `lte` | 작거나 같다, 이하<br/>(less than equal) | `<!--[if lte IE 8]><![endif]-->` | IE8 이하 |
 | `gt` | 크다, 초과<br/>(greater than) | `<!--[if gt IE 6]><![endif]-->` | IE6 초과 |
 | `gte` | 크거나 같다, 이상<br/>(greater than equal) | `<!--[if gte IE 7]><![endif]-->` | IE7 이상 |
-| `()` |  |  |  |
 | `&` | 그리고<br/>(and) | `<!--[if (gt IE 6) & (lte IE 9)]><![endif]-->` | IE6 초과 ~ IE9 이하 |
 | `|` | 또는<br/>(or) | `<!--[if (IE 7) | (IE 9)]><![endif]-->`<br/>`<!--[if IE 7 | IE 9]><![endif]-->` | IE7 또는 IE9 |
-
-
 
 ## JavaScript Libraries(Plugins)
 
@@ -277,7 +274,7 @@ if (!Modernizr.input.placeholder) {
     var script = document.createElement('script');
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/placeholders/4.0.1/placeholders.min.js';
     document.head.appendChild(script);
-};
+}
 ```
 
 ### Prefixfree
