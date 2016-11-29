@@ -42,10 +42,10 @@ Modernizr 에서 제공하는 [폴리필 목록](https://github.com/Modernizr/Mo
 <meta name="description" content="페이지 설명"/>
 ```
 
-`name`
+**`name`**
 :  메타 데이터의 이름(종류)를 지정하는 속성
 
-`content`
+**`content`**
 :  `name`, `http-equiv` 속성의 값을 입력하는 속성
 
 ### IE 렌더링 방식 설정
@@ -55,16 +55,16 @@ Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 ```
 
-`http-equiv` (equivalent)
+**`http-equiv`** (equivalent)
 :  HTML 문서를 읽기 전에 브라우저에게 전달한 정보의 종류를 입력하는 속성
 
-`content`
-- `IE=5`
-- `IE=7`
-- `IE=EmulateIE7`
-- `IE=8`
-- `IE=EmulateIE8`
-- `IE=edge` (권장, IE8 이상 버전에서 항상 최신 표준 모드로 렌더링)
+**`IE=5`**
+**`IE=7`**
+**`IE=EmulateIE7`**
+**`IE=8`**
+**`IE=EmulateIE8`**
+**`IE=edge`** (권장, IE8 이상 버전에서 항상 최신 표준 모드로 렌더링)
+
 > 마이크로소프트는 실험적인 프로젝트가 아니면 `IE=edge` 모드를 권장함.
 
 ### 뷰포트(Viewport) 렌더링 방식 설정
@@ -74,18 +74,16 @@ Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1"/>
 ```
 
-`content`
-
 **`width=device-width`**
-Display 의 `width` 값을 각 디바이스(장치, device)의 `width` 값과 동일하게 적용
-`width=device-width`, 'height=device-height' 등
+:  Display 의 `width` 값을 각 디바이스(장치, device)의 `width` 값과 동일하게 적용
+:  `width=device-width`, 'height=device-height' 등
 
 **`initial-scale=1`**
-Display 의 초기 화면 배율(확대의 정도) 설정
+:  Display 의 초기 화면 배율(확대의 정도) 설정
 
 **`user-scalable=no`**
 
-**`maximum-scale=1`**  
+**`maximum-scale=1`**
 
 **`minimum-scale=1`**
 
