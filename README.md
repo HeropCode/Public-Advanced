@@ -250,11 +250,15 @@ HTML5 와 CSS3 에 정의된 요소(HTML Elements), 속성(CSS Property)들에 �
 
 #### 기본 설정
 
+기본적으로 `<html>` 에 `no-js` 클래스를 추가하세요.
+
 ```html
 <html class="no-js">
 ```
 
 #### CSS 사용법 예시
+
+`linear-gradient` 를 사용할 수 없을 경우 다른 속성과 값으로 해결할 수 있습니다.
 
 ```css
 header {
@@ -266,6 +270,10 @@ header {
 ```
 
 #### JavaScript 사용법 예시
+
+현재 브라우저에서 특정 기능이 동작하는지 확인할 수 있습니다.
+
+특정 기능이 동작하지 않을 경우 동작하는 추가 스크립트를 작성할 수 있습니다.
 
 ```js
 if (Modernizr.svg) console.log('svg: Available');
