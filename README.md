@@ -75,14 +75,20 @@ Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정
 ```
 
 `content`
-- `width=device-width`
-  - Display 의 `width` 값을 각 디바이스(장치, device)의 `width` 값과 동일하게 적용
-  - `width=device-width`, 'height=device-height' 등
-- `initial-scale=1`
-  - Display 의 초기 화면 배율(확대의 정도) 설정
-- `user-scalable=no`
-- `maximum-scale=1`
-= `minimum-scale=1`
+
+**`width=device-width`**
+Display 의 `width` 값을 각 디바이스(장치, device)의 `width` 값과 동일하게 적용
+`width=device-width`, 'height=device-height' 등
+
+**`initial-scale=1`**
+Display 의 초기 화면 배율(확대의 정도) 설정
+
+**`user-scalable=no`**
+
+**`maximum-scale=1`**
+
+**`minimum-scale=1`**
+
 
 ## JavaScript Libraries(Plugins)
 
