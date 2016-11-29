@@ -335,7 +335,40 @@ jQuery 에서 Easing functions(equation, 애니메이션 진행 그래프) 사�
 
 ## CSS Convention
 
-### 단축속성을 사용
+### 띄어쓰기
+
+'선택자'와 `{` 사이에 한 번 띄어쓰기.
+
+'속성'의 `:` 뒤에 한 번 띄어쓰기.
+
+```css
+/* 권장하지 않음 */
+.selector{
+    width:100px;
+    position:relative;
+    color:red;
+}
+
+.selector
+{
+    width: 100px;
+    position: relative;
+    color: red;
+}
+```
+
+```css
+/* 추천 */
+.selector {
+    width: 100px;
+    position: relative;
+    color: red;
+}
+```
+
+### 단축속성
+
+여러 개별속성을 작성하지 않고 단축속성을 사용한 단순한 형태로 작성.
 
 ```css
 /* 권장하지 않음 */
@@ -358,7 +391,9 @@ jQuery 에서 Easing functions(equation, 애니메이션 진행 그래프) 사�
 }
 ```
 
-#### '0'의 단위 생략
+#### 단위 생략
+
+'0' 값에는 `px`, `%`, `em` 등의 단위를 사용하지 않음.
 
 ```css
 /* 권장하지 않음 */
