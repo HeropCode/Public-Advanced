@@ -43,10 +43,10 @@ Modernizr 에서 제공하는 [폴리필 목록](https://github.com/Modernizr/Mo
 ```
 
 `name`
-:  메타 데이터의 이름(종류)를 지정
+:  메타 데이터의 이름(종류)를 지정하는 속성
 
 `content`
-:  `name`, `http-equiv` 등의 값을 입력
+:  `name`, `http-equiv` 속성의 값을 입력하는 속성
 
 ### IE 렌더링 방식 설정
 Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정
@@ -56,10 +56,10 @@ Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정
 ```
 
 `http-equiv` (equivalent)
-:  HTML 문서를 읽기 전에 브라우저에게 전달한 정보의 종류
+:  HTML 문서를 읽기 전에 브라우저에게 전달한 정보의 종류를 입력하는 속성
 
 `content`
-:  `name`, `http-equiv` 등의 값을 입력
+:  `name`, `http-equiv` 속성의 값을 입력하는 속성
 - `IE=5`
 - `IE=7`
 - `IE=EmulateIE7`
@@ -111,7 +111,7 @@ header {
     background: linear-gradient(to right, red, orange);
 }
 .no-cssgradients header {
-    background: url(/images/bg-gradient.jpg);
+    background: url("/images/bg-gradient.jpg");
 }
 ```
 
