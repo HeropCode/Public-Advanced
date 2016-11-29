@@ -84,14 +84,18 @@ Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정
 :  Display 의 `width` 값을 각 디바이스(장치, device)의 `width` 값과 동일하게 적용
 
 ```
-width=device-width
-height=device-height
+width=480, width=device-width, height=device-height
 ```
 
 **`initial-scale=1`**
 :  Display 의 초기 화면 배율(확대의 정도) 설정
 
 **`user-scalable=no`**
+:  사용자가 디바이스 화면을 '확대/축소'할 수 있는지 설정
+
+```
+yes, no
+```
 
 **`maximum-scale=1`**
 
