@@ -59,11 +59,17 @@ Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정
 :  HTML 문서를 읽기 전에 브라우저에게 전달한 정보의 종류를 입력하는 속성
 
 **`IE=5`**
+
 **`IE=7`**
+
 **`IE=EmulateIE7`**
+
 **`IE=8`**
+
 **`IE=EmulateIE8`**
-**`IE=edge`** (권장, IE8 이상 버전에서 항상 최신 표준 모드로 렌더링)
+
+**`IE=edge`** (권장)
+:  IE8 이상 버전에서 항상 최신 표준 모드로 렌더링
 
 > 마이크로소프트는 실험적인 프로젝트가 아니면 `IE=edge` 모드를 권장함.
 
@@ -76,7 +82,11 @@ Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정
 
 **`width=device-width`**
 :  Display 의 `width` 값을 각 디바이스(장치, device)의 `width` 값과 동일하게 적용
-:  `width=device-width`, 'height=device-height' 등
+
+```
+width=device-width
+height=device-height
+```
 
 **`initial-scale=1`**
 :  Display 의 초기 화면 배율(확대의 정도) 설정
