@@ -35,12 +35,38 @@ Modernizr 에서 제공하는 [폴리필 목록](https://github.com/Modernizr/Mo
 `EUC-KR`
 :  하나의 완성된 글자를 인식
 
+### 웹페이지 설명
+웹페이지에 대한 설명을 입력
+
+```html
+<meta name="description" content="페이지 설명"/>
+```
+
+`name`
+:  메타 데이터의 이름(종류)를 지정
+
+`content`
+:  `name`, `http-equiv` 등의 값을 입력
+
 ### IE 렌더링 방식 설정
 Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정
 
 ```html
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 ```
+
+`http-equiv` (equivalent)
+:  HTML 문서를 읽기 전에 브라우저에게 전달한 정보의 종류
+
+`content`
+:  `name`, `http-equiv` 등의 값을 입력
+- `IE=5`
+- `IE=7`
+- `IE=EmulateIE7`
+- `IE=8`
+- `IE=EmulateIE8`
+- `IE=edge` (권장, IE8 이상 버전에서 항상 최신 표준 모드로 렌더링)
+> 마이크로소프트는 실험적인 프로젝트가 아니면 `IE=edge` 모드를 권장함.
 
 ## JavaScript Libraries(Plugins)
 
