@@ -151,8 +151,6 @@ IE6 ~ IE10 버전은 'public' 루트에 `favicon.ico` 파일을 위치하면 자
 
 IE11 버전은 `.png` 사용.
 
-[파비콘을 만들어보세요!](http://iconifier.net/)
-
 ```html
 <link rel="icon" href="favicon.png"/>
 <link rel="apple-touch-icon-precomposed" href="favicon.png"/>
@@ -165,14 +163,22 @@ IE11 버전은 `.png` 사용.
 ![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/dribbble_icon_192.png)
 
 `favicon.png`, `touchicon.png`
-:  192 x 192 (px)
+:  158 x 158 (px)
 
 ![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/dribbble_icon_158.png)
 
 `favicon.ico`
 : 16 x 16, 32 x 32 (px)
 
+[파비콘을 만들어보세요!](http://iconifier.net/)
+
 ![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/dribbble_icon_16.png)
+
+크롬 브라우저(windows), 크롬 앱(Android), 네이버 앱(Android) 화면 
+
+![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/favicon_desc12.png)
+![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/favicon_desc1.png)
+![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/favicon_desc3.png)
 
 **`rel="apple-touch-icon-precomposed"`**
 :  iOS 2.0 / Android 2.1 이상 Touch Icon (192x192 / 158x158)
