@@ -353,8 +353,7 @@ jQuery 의 장점
 ```css
 /* Recommended */
 .selector {
-    border-top: 0;
     font: 30px/1.6 palatino, georgia, serif;
-    padding: 0 1em 2em;
+    padding: 0 1px 2px;
 }
 ```
