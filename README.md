@@ -294,7 +294,7 @@ if (!Modernizr.input.placeholder) {
 #### 공급업체 접두어(Vendor Prefix)
 
 | 접두어 | 공급업체 |
-|---|---|
+|:---:|---|
 | -webkit- | 크롬, 사파리, 오페라의 최신 버전 |
 | -mos- | 파이어폭스 |
 | -o- | 오페라의 이전 버전 |
@@ -327,7 +327,7 @@ jQuery 의 장점
 
 <http://gsgd.co.uk/sandbox/jquery/easing/>
 
-- jQuery 에서 Easing functions(equation, 애니메이션 진행 그래프) 사용할 수 있는 jQuery Plugin.
+jQuery 에서 Easing functions(equation, 애니메이션 진행 그래프) 사용할 수 있는 jQuery Plugin.
 
 ```html
 <script src="js/lib/jquery.easing.min.js"></script>
@@ -335,25 +335,49 @@ jQuery 의 장점
 
 ## CSS Convention
 
-### 단축속성을 사용하세요
+### 단축속성을 사용
+
+**권장하지 않음**
 
 ```css
-/* Not recommended */
 .selector {
-    font-family: palatino, georgia, serif;
-    font-size: 30px;
+    font-family: dotum, georgia, serif;
+    font-size: 20px;
     line-height: 1.6;
-    padding-bottom: 2px;
-    padding-left: 1px;
-    padding-right: 1px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 0;
 }
 ```
 
+**추천**
+
 ```css
-/* Recommended */
 .selector {
-    font: 30px/1.6 palatino, georgia, serif;
-    padding: 0 1px 2px;
+    font: 20px/1.6 dotum, georgia, serif;
+    padding: 0 10px 20px 10px;
+}
+```
+
+#### '0'의 단위 생략
+
+**권장하지 않음**
+
+```css
+.selector {
+    margin-right: 0px;
+    text-indent: 0%;
+    letter-spacing: 0em;
+}
+```
+
+**추천**
+
+```css
+.selector {
+    margin-right: 0;
+    text-indent: 0;
+    letter-spacing: 0;
 }
 ```
