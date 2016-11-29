@@ -85,7 +85,7 @@ Display 의 초기 화면 배율(확대의 정도) 설정
 
 **`user-scalable=no`**
 
-**`maximum-scale=1`**
+**`maximum-scale=1`**  
 
 **`minimum-scale=1`**
 
