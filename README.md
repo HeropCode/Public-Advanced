@@ -19,7 +19,7 @@ HTML5 보일러 플레이트
 Modernizr 에서 제공하는 [폴리필 목록](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills)
 
 Polyfill 예시
-  - html5shiv: HTML5 의 Sectioning Elements(<header>, <footer>, <section> 등) 를 지원하지 않는 브라우저를 위한 라이브러리
+  - html5shiv: HTML5 의 Sectioning Elements(`<header>`, `<footer>`, `<section>` 등) 를 지원하지 않는 브라우저를 위한 라이브러리
   - respond: CSS `@media` 를 IE6 ~ IE8 버전에서 사용 가능하게 만들어주는 라이브러리
   - selectivizr: CSS `border-radius` 와 `box-shadow`, `liner-gradient`를 IE6 ~ IE9 버전에서 지원하기 위한 라이브러리
 
@@ -53,7 +53,7 @@ Polyfill 예시
 
 ### IE 렌더링 방식 설정
 
-Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정
+Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정(호환성보기, 쿼크모드 설정)
 
 ```html
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -79,7 +79,7 @@ Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정
 
 ### 뷰포트(Viewport) 렌더링 방식 설정
 
-웹페이지가 Display(화면)에 표현되는 방식을 설정
+웹페이지가 Display(화면)에 표현되는 방식(Viewport)을 설정
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1"/>
@@ -116,7 +116,7 @@ etc...
 
 웹페이지가 소셜 미디어로 공유될 때 우선적으로 활용되는 정보
 
-[The Open Graph protocol 추가 속성](http://ogp.me/)
+[더 많은 오픈 크래프 속성 보기](http://ogp.me/)
 
 ```html
 <meta property="og:type" content="website">
@@ -126,13 +126,27 @@ etc...
 <meta property="og:url" content="웹페이지 URL">
 ```
 
+### 트위터 카드(Twitter Cards)
+
+웹페이지가 소셜 미디어(트위터)로 공유될 때 우선적으로 활용되는 정보
+
+[더 많은 트위터 카드 보기](https://dev.twitter.com/cards/overview)
+
+```html
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="웹페이지의 제목">
+<meta name="twitter:description" content="웹페이지의 간단한 설명">
+<meta name="twitter:image" content="웹페이지의 대표 이미지 URL">
+<meta name="twitter:url" content="웹페이지 URL">
+```
+
 ### Favicon(파비콘, favorites icon)
 
 웹페이지를 나타내는 아이콘, 웹페이지의 로고를 설정
 
 IE6 ~ IE10 버전은 'public' 루트에 `favicon.ico` 파일을 위치하면 자동으로 로딩하기 때문에 `<link>` 를 작성할 필요가 없음.
 
-IE11 버전은 `png` 파일 사용.
+IE11 버전은 `.png` 사용.
 
 ```html
 <link rel="icon" href="favicon.png"/>
