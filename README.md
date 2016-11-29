@@ -333,5 +333,28 @@ jQuery 의 장점
 <script src="js/lib/jquery.easing.min.js"></script>
 ```
 
-## HTML Convention
+## CSS Convention
 
+### 단축속성을 사용하세요
+
+```css
+/* Not recommended */
+.selector {
+    font-family: palatino, georgia, serif;
+    font-size: 30px;
+    line-height: 1.6;
+    padding-bottom: 2px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 0;
+}
+```
+
+```css
+/* Recommended */
+.selector {
+    border-top: 0;
+    font: 30px/1.6 palatino, georgia, serif;
+    padding: 0 1em 2em;
+}
+```
