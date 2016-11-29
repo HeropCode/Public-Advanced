@@ -23,7 +23,6 @@ Polyfill 예시
   - respond: CSS `@media` 를 IE6 ~ IE8 버전에서 사용 가능하게 만들어주는 라이브러리
   - selectivizr: CSS `border-radius` 와 `box-shadow`, `liner-gradient`를 IE6 ~ IE9 버전에서 지원하기 위한 라이브러리
 
-
 ### 인코딩 방식 설정
 
 문자가 인코딩되는 방식을 설정
@@ -92,7 +91,8 @@ Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정
 ```
 width=480,
 width=device-width, 
-height=device-height 등
+height=device-height,
+etc...
 ```
 
 **`initial-scale=1`**
@@ -114,9 +114,37 @@ height=device-height 등
 
 ### Favicon(파비콘, favorites icon)
 
-웹페이지를 나타내는 아이콘, 웹페이지의 로고
+웹페이지를 나타내는 아이콘, 웹페이지의 로고를 설정
 
 IE6 ~ IE10 버전은 'public' 루트에 `favicon.ico` 파일을 위치하면 자동으로 로딩하기 때문에 `<link>` 를 작성할 필요가 없음.
+
+IE11 버전은 `png` 파일 사용.
+
+### 조건부 주석(Conditional Comments)
+
+IE10 미만(IE9 이하) 버전에서만 동작하는 조건문(if)
+
+IE 각 버전에 맞는 기능이나 파일, 디자인 등의 별도 삽입을 위해 사용.
+
+```html
+<!--[if lt ie 9]>
+    <script src="js/lib/ie9.js"></script>
+    <script src="js/lib/respond.min.js"></script>
+<![endif]-->
+```
+
+#### 조건부(Conditional)
+
+| 기호 | 뜻 | 예시 | 예시 해석 |
+|---|---|---|---|
+| `!` | 부정(not) | `<!--[if !IE]>` | IE브라우저가 아닐 때 |
+| `lt` | 작다, 미만(less than) | `<!--[if lt IE 9]>` | IE9 미만 |
+| `lte` | 작거나 같다, 이하(less than equal) | `<!--[if lte IE 8]>` | IE8 이하 |
+| `gt` | 크다, 초과(greater than) | `<!--[if gt IE 6]>` | IE6 초과 |
+| `gte` | 크거나 같다, 이상(greater than equal) | `<!--[if gte IE 7]>` | IE7 이상 |
+| `()` |  |  |  |
+| `&` | 그리고(and) | `<!--[if (gt IE 6) & (lte IE 9)]>` | IE6 초과 ~ IE9 이하 |
+| `|` | 또는(or) | `<!--[if (IE 7) | (IE 9)]>`, `<!--[if IE 7 | IE 9]>` | IE7 또는 IE9 |
 
 ```html
 <link rel="icon" href="favicon.png"/>
