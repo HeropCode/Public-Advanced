@@ -412,3 +412,41 @@ jQuery 에서 Easing functions(equation, 애니메이션 진행 그래프) 사�
     letter-spacing: 0;
 }
 ```
+
+#### 다중 선택자 줄바꿈
+
+여러 '선택자'를 입력할 경우 줄바꿈을 하여 가독성을 확보.
+
+```css
+/* 권장하지 않음 */
+.selector1, .selector2, .selector3 {
+    position: absolute;
+}
+```
+
+```css
+/* 추천 */
+.selector1,
+.selector2,
+.selector3 {
+    position: absolute;
+}
+```
+
+#### 각 섹션 주석 처리
+
+각 섹션에는 쉽게 알아볼 수 있도록 주석 처리
+
+```css
+/* HEADER */
+
+header { }
+
+/* VISUAL */
+
+.visual { }
+
+/* FOOTER */
+
+footer { }
+```
