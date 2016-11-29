@@ -176,9 +176,7 @@ IE11 버전은 `.png` 사용.
 
 크롬 브라우저(windows), 크롬 앱(Android), 네이버 앱(Android) 화면 
 
-![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/favicon_desc12.png)
-![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/favicon_desc1.png)
-![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/favicon_desc3.png)
+![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/favicon_desc14.png)
 
 **`rel="apple-touch-icon-precomposed"`**
 :  iOS 2.0 / Android 2.1 이상 Touch Icon (192x192 / 158x158)
