@@ -3,7 +3,7 @@
 
 
 ## HTML5 Boiler Plate
-- HTML5 보일러플레이트
+- HTML5 보일러 플레이트
   - HTML5 의 새로운 요소 사용에 도움
   - 안정적인 하위호환성 제공
   - Polyfill(폴리필)
@@ -36,7 +36,7 @@ Modernizr 에서 제공하는 [폴리필 목록](https://github.com/Modernizr/Mo
 :  하나의 완성된 글자를 인식
 
 ### 웹페이지 설명
-웹페이지에 대한 설명을 입력
+웹페이지에 대한 간단한 설명을 입력
 
 ```html
 <meta name="description" content="페이지 설명"/>
@@ -59,7 +59,6 @@ Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정
 :  HTML 문서를 읽기 전에 브라우저에게 전달한 정보의 종류를 입력하는 속성
 
 `content`
-:  `name`, `http-equiv` 속성의 값을 입력하는 속성
 - `IE=5`
 - `IE=7`
 - `IE=EmulateIE7`
@@ -67,6 +66,23 @@ Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정
 - `IE=EmulateIE8`
 - `IE=edge` (권장, IE8 이상 버전에서 항상 최신 표준 모드로 렌더링)
 > 마이크로소프트는 실험적인 프로젝트가 아니면 `IE=edge` 모드를 권장함.
+
+### 뷰포트(Viewport) 렌더링 방식 설정
+웹페이지가 Display(화면)에 표현되는 방식을 설정
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1"/>
+```
+
+`content`
+- `width=device-width`
+  - Display 의 `width` 값을 각 디바이스(장치, device)의 `width` 값과 동일하게 적용
+  - `width=device-width`, 'height=device-height' 등
+- `initial-scale=1`
+  - Display 의 초기 화면 배율(확대의 정도) 설정
+- `user-scalable=no`
+- `maximum-scale=1`
+= `minimum-scale=1`
 
 ## JavaScript Libraries(Plugins)
 
@@ -128,9 +144,9 @@ if (!Modernizr.input.placeholder) {
 
 ### Prefixfree
 <https://github.com/LeaVerou/prefixfree>
-- `-ms-`, `-webkit-` 등의 공급 업체 접두사(Vendir Prefix)를 사용하지 않아도 크로스브라우징이 가능한 JavaScript Plugin.
+- `-ms-`, `-webkit-` 등의 공급 업체 접두사(Vendor Prefix)를 사용하지 않아도 크로스브라우징이 가능한 JavaScript Plugin.
 
-#### 공급업체 접두어
+#### 공급업체 접두어(Vendor Prefix)
 | 접두어 | 공급업체 |
 |---|---|
 | -webkit- | 크롬, 사파리, 오페라의 최신 버전 |
