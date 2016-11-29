@@ -84,7 +84,9 @@ Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정
 :  Display 의 `width` 값을 각 디바이스(장치, device)의 `width` 값과 동일하게 적용
 
 ```
-width=480, width=device-width, height=device-height
+width=480,
+width=device-width, 
+height=device-height 등
 ```
 
 **`initial-scale=1`**
@@ -94,20 +96,37 @@ width=480, width=device-width, height=device-height
 :  사용자가 디바이스 화면을 '확대/축소'할 수 있는지 설정
 
 ```
-yes, no
+확대: yes,
+축소: no
 ```
 
 **`maximum-scale=1`**
+:  사용자가 디바이스를 '확대'할 수 있는 최대치의 값(최대 10배)
 
 **`minimum-scale=1`**
+:  사용자가 디바이스를 '축소'할 수 있는 최대치의 값(최대 10배)
 
+### Favicon(파비콘, favorites icon)
+웹페이지를 나타내는 아이콘, 웹페이지의 로고
+
+IE6 ~ IE10 버전은 'public' 루트에 `favicon.ico` 파일을 위치하면 자동으로 로딩하기 때문에 `<link>` 를 작성할 필요가 없음.
+
+```html
+<link rel="icon" href="favicon.png"/>
+<link rel="apple-touch-icon-precomposed" href="favicon.png"/>
+<!--<link rel="shortcut icon" href="favicon.ico" />-->
+```
+
+**`rel="apple-touch-icon-precomposed"`**
+:  iOS 2.0 / Android 2.1 이상 Touch Icon (192x192 / 158x158)
 
 ## JavaScript Libraries(Plugins)
 
 ### ie9
 <https://code.google.com/archive/p/ie7-js/>
-- IE5.5 ~ IE8 (IE: Microsoft Internet Explorer) 버전을 IE9 버전처럼 표현(style)할 수 있는 JavaScript Library.
-- 조건부 주석(Conditional Comments)과 함께 사용
+IE5.5 ~ IE8 (IE: Microsoft Internet Explorer) 버전을 IE9 버전처럼 표현(style)할 수 있는 JavaScript Library.
+
+조건부 주석(Conditional Comments)과 함께 사용
 
 ```html
 <!--[if lt ie 9]>
@@ -117,8 +136,9 @@ yes, no
 
 ### Respond
 <https://github.com/scottjehl/Respond>
-- CSS @media 를 IE6 ~ IE8 버전에서 사용 가능하게 만들어주는 JavaScript Library.
-- 조건부 주석(Conditional Comments)과 함께 사용
+CSS @media 를 IE6 ~ IE8 버전에서 사용 가능하게 만들어주는 JavaScript Library.
+
+조건부 주석(Conditional Comments)과 함께 사용
 
 ```html
 <!--[if lt ie 9]>
@@ -128,7 +148,7 @@ yes, no
 
 ### Modernizr
 <https://modernizr.com/>
-- HTML5 와 CSS3 에 정의된 요소(HTML Elements), 속성(CSS Property)들에 대한 지원 여부를 점검하는 JavaScript Library.
+HTML5 와 CSS3 에 정의된 요소(HTML Elements), 속성(CSS Property)들에 대한 지원 여부를 점검하는 JavaScript Library.
 
 ```html
 <script src="js/lib/modernizr-2.8.3.min.js"></script>
@@ -162,7 +182,7 @@ if (!Modernizr.input.placeholder) {
 
 ### Prefixfree
 <https://github.com/LeaVerou/prefixfree>
-- `-ms-`, `-webkit-` 등의 공급 업체 접두사(Vendor Prefix)를 사용하지 않아도 크로스브라우징이 가능한 JavaScript Plugin.
+`-ms-`, `-webkit-` 등의 공급 업체 접두사(Vendor Prefix)를 사용하지 않아도 크로스브라우징이 가능한 JavaScript Plugin.
 
 #### 공급업체 접두어(Vendor Prefix)
 | 접두어 | 공급업체 |
@@ -178,8 +198,9 @@ if (!Modernizr.input.placeholder) {
 
 ### jQuery
 <http://jquery.com/>
-- HTML 과 JavaScript 사이의 상호 작용을 강조한 경량화된 JavaScript Library.
-- jQuery 의 장점
+HTML 과 JavaScript 사이의 상호 작용을 강조한 경량화된 JavaScript Library.
+
+jQuery 의 장점
   - 쉬운 DOM 선택(CSS 선택자 활용)
   - 편리한 Event 활용
   - 특수효과 및 애니메이션
