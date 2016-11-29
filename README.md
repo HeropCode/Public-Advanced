@@ -337,9 +337,8 @@ jQuery 에서 Easing functions(equation, 애니메이션 진행 그래프) 사�
 
 ### 단축속성을 사용
 
-**권장하지 않음**
-
 ```css
+/* 권장하지 않음 */
 .selector {
     font-family: dotum, georgia, serif;
     font-size: 20px;
@@ -351,9 +350,8 @@ jQuery 에서 Easing functions(equation, 애니메이션 진행 그래프) 사�
 }
 ```
 
-**추천**
-
 ```css
+/* 추천 */
 .selector {
     font: 20px/1.6 dotum, georgia, serif;
     padding: 0 10px 20px 10px;
@@ -362,9 +360,8 @@ jQuery 에서 Easing functions(equation, 애니메이션 진행 그래프) 사�
 
 #### '0'의 단위 생략
 
-**권장하지 않음**
-
 ```css
+/* 권장하지 않음 */
 .selector {
     margin-right: 0px;
     text-indent: 0%;
@@ -372,9 +369,8 @@ jQuery 에서 Easing functions(equation, 애니메이션 진행 그래프) 사�
 }
 ```
 
-**추천**
-
 ```css
+/* 추천 */
 .selector {
     margin-right: 0;
     text-indent: 0;
