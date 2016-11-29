@@ -5,6 +5,9 @@
 
 ## HTML5 Boiler Plate
 
+보일러 플레이트
+:  변경 없이 다시 사용할 수 있는 프로그램(코드)
+
 HTML5 보일러 플레이트
   - HTML5 의 새로운 요소 사용에 도움
   - 안정적인 하위호환성 제공
@@ -116,7 +119,7 @@ etc...
 
 웹페이지가 소셜 미디어로 공유될 때 우선적으로 활용되는 정보
 
-[더 많은 오픈 크래프 속성 보기](http://ogp.me/)
+[더 많은 오픈 그래프 속성 보기](http://ogp.me/)
 
 ```html
 <meta property="og:type" content="website">
@@ -148,14 +151,33 @@ IE6 ~ IE10 버전은 'public' 루트에 `favicon.ico` 파일을 위치하면 자
 
 IE11 버전은 `.png` 사용.
 
+[파비콘을 만들어보세요!](http://iconifier.net/)
+
 ```html
 <link rel="icon" href="favicon.png"/>
 <link rel="apple-touch-icon-precomposed" href="favicon.png"/>
 <!--<link rel="shortcut icon" href="favicon.ico" />-->
 ```
 
+`favicon.png`
+:  192 x 192 (px)
+
+![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/dribbble_icon_192.png)
+
+`favicon.png`, `touchicon.png`
+:  192 x 192 (px)
+
+![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/dribbble_icon_158.png)
+
+`favicon.ico`
+: 16 x 16, 32 x 32 (px)
+
+![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/dribbble_icon_16.png)
+
 **`rel="apple-touch-icon-precomposed"`**
 :  iOS 2.0 / Android 2.1 이상 Touch Icon (192x192 / 158x158)
+
+
 
 ### 조건부 주석(Conditional Comments)
 
