@@ -202,7 +202,7 @@ IE 각 버전에 맞는 기능이나 파일, 디자인 등의 별도 삽입을 �
 | `gt` | 크다, 초과<br/>(greater than) | `<!--[if gt IE 6]><![endif]-->` | IE6 초과 |
 | `gte` | 크거나 같다, 이상<br/>(greater than equal) | `<!--[if gte IE 7]><![endif]-->` | IE7 이상 |
 | `&` | 그리고<br/>(and) | `<!--[if (gt IE 6) & (lte IE 9)]><![endif]-->` | IE6 초과 ~ IE9 이하 |
-| `|` | 또는<br/>(or) | `<!--[if (IE 7) | (IE 9)]><![endif]-->`<br/>`<!--[if IE 7 | IE 9]><![endif]-->` | IE7 또는 IE9 |
+| `&vert;` | 또는<br/>(or) &vert; `<!--[if (IE 7) &vert; (IE 9)]><![endif]-->`<br/>`<!--[if IE 7 | IE 9]><![endif]-->` | IE7 또는 IE9 |
 
 ## JavaScript Libraries(Plugins)
 
