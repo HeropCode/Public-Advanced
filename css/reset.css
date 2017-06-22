@@ -40,7 +40,7 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
+    content: "";
     content: none;
 }
 table {
@@ -50,7 +50,13 @@ table {
 a {
     text-decoration: none;
 }
+img {
+    vertical-align: middle;
+}
 
-/* float clearfix */
-.clearfix{*zoom:1}
-.clearfix:after{content:"";display:block;clear:both}
+/* FLOAT CLEAR FIX */
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}

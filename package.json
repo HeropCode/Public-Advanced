@@ -1,0 +1,19 @@
+{
+  "name": "public-advanced",
+  "version": "1.0.0",
+  "description": "HTML Boiler Plate",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeropCode/Public-Advanced.git"
+  },
+  "author": "ParkYoungWoong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeropCode/Public-Advanced/issues"
+  },
+  "homepage": "https://github.com/HeropCode/Public-Advanced#readme"
+}

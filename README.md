@@ -1,7 +1,4 @@
-# Public Advanced(중급반)
-
-중급반 학생을 위한 프로젝트 폴더
-
+# Public Advanced
 
 ## HTML5 Boiler Plate
 
@@ -9,10 +6,10 @@
 :  변경 없이 다시 사용할 수 있는 프로그램(코드)
 
 HTML5 보일러 플레이트
-  - HTML5 의 새로운 요소 사용에 도움
+  - HTML5 의 새로운 요소(`<header>`, `<section>` 등) 사용에 도움
   - 안정적인 하위호환성 제공
   - Polyfill(폴리필)
-  - 점진적인 기능 향상을 염두(새로운 코드에 대한 최적화된 구조)
+  - 점진적인 기능 향상을 염두(새로운 코드 삽입을 위한 최적의 구조)
   - 최적화 버전 유지
 
 ### Polyfill (shim, fallback)
@@ -93,7 +90,7 @@ Internet Explorer 브라우저에서 렌더링(Rendering)되는 방식을 설정
 
 ```
 width=480,
-width=device-width, 
+width=device-width,
 height=device-height,
 etc...
 ```
@@ -117,7 +114,7 @@ etc...
 
 ### 오픈 그래프(The Open Graph protocol)
 
-웹페이지가 소셜 미디어로 공유될 때 우선적으로 활용되는 정보
+웹페이지가 소셜 미디어(페이스북 등)로 공유될 때 우선적으로 활용되는 정보
 
 [더 많은 오픈 그래프 속성 보기](http://ogp.me/)
 
@@ -174,7 +171,7 @@ IE11 버전은 `.png` 사용.
 
 ![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/dribbble_icon_16.png)
 
-크롬 앱(Android), 네이버 앱(Android), 크롬 브라우저(windows) 화면 
+크롬 앱(Android), 네이버 앱(Android), 크롬 브라우저(windows) 화면
 
 ![favicon](https://github.com/ParkYoungWoong/imagesServer/blob/master/images/favicon_desc4.jpg)
 
@@ -191,7 +188,6 @@ IE 각 버전에 맞는 기능이나 파일, 디자인 등의 별도 삽입을 �
 
 ```html
 <!--[if lt ie 9]>
-    <script src="js/lib/ie9.js"></script>
     <script src="js/lib/respond.min.js"></script>
 <![endif]-->
 ```
@@ -210,20 +206,6 @@ IE 각 버전에 맞는 기능이나 파일, 디자인 등의 별도 삽입을 �
 
 ## JavaScript Libraries(Plugins)
 
-### ie9
-
-<https://code.google.com/archive/p/ie7-js/>
-
-IE5.5 ~ IE8 (IE: Microsoft Internet Explorer) 버전을 IE9 버전처럼 표현(style)할 수 있는 JavaScript Library.
-
-조건부 주석(Conditional Comments)과 함께 사용
-
-```html
-<!--[if lt ie 9]>
-<script src="js/lib/ie9.js"></script>
-<![endif]-->
-```
-
 ### Respond
 
 <https://github.com/scottjehl/Respond>
@@ -234,7 +216,7 @@ CSS @media 를 IE6 ~ IE8 버전에서 사용 가능하게 만들어주는 JavaSc
 
 ```html
 <!--[if lt ie 9]>
-<script src="js/lib/respond.min.js"></script>
+<script src="js/plugins/respond.min.js"></script>
 <![endif]-->
 ```
 
@@ -244,8 +226,10 @@ CSS @media 를 IE6 ~ IE8 버전에서 사용 가능하게 만들어주는 JavaSc
 
 HTML5 와 CSS3 에 정의된 요소(HTML Elements), 속성(CSS Property)들에 대한 지원 여부를 점검하는 JavaScript Library.
 
+> `Modernizr` 3.0 이후 버전에서는 'NPM'의 노드 모듈로 빌드 시스템을 제공합니다.
+
 ```html
-<script src="js/lib/modernizr-2.8.3.min.js"></script>
+<script src="js/libs/modernizr-2.8.3.min.js"></script>
 ```
 
 #### 기본 설정
@@ -301,7 +285,7 @@ if (!Modernizr.input.placeholder) {
 | -ms- | 인터넷 익스플로러 |
 
 ```html
-<script src="js/lib/prefixfree.min.js"></script>
+<script src="js/plugins/prefixfree.min.js"></script>
 ```
 
 ### jQuery
@@ -317,8 +301,12 @@ jQuery 의 장점
   - Ajax
   - 확장성 등...
 
+```
+1.12.4 version
+```
+
 ```html
-<script src="js/lib/jquery-1.10.1.min.js"></script>
+<script src="js/libs/jquery.min.js"></script>
 ```
 
 ### jQuery Easing
@@ -330,7 +318,7 @@ jQuery 의 장점
 jQuery 에서 Easing functions(equation, 애니메이션 진행 그래프) 사용할 수 있는 jQuery Plugin.
 
 ```html
-<script src="js/lib/jquery.easing.min.js"></script>
+<script src="js/libs/jquery.easing.min.js"></script>
 ```
 
 ## CSS Convention
