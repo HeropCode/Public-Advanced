@@ -427,14 +427,17 @@ jQuery 에서 Easing functions(equation, 애니메이션 진행 그래프) 사�
 
 ```css
 /* HEADER */
+header {
 
-header { }
+}
 
 /* VISUAL */
+.visual {
 
-.visual { }
+}
 
 /* FOOTER */
+footer {
 
-footer { }
+}
 ```
