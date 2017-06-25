@@ -204,6 +204,22 @@ IE 각 버전에 맞는 기능이나 파일, 디자인 등의 별도 삽입을 �
 | `&` | 그리고<br/>(and) | `<!--[if (gt IE 6) & (lte IE 9)]><![endif]-->` | IE6 초과 ~ IE9 이하 |
 | <code>&#124;</code> | 또는<br/>(or) | `<!--[if (IE 7) \| (IE 9)]><![endif]-->`<br/>`<!--[if IE 7 \| IE 9]><![endif]-->` | IE7 또는 IE9 |
 
+## JavaScript Strict Mode
+
+JavaScript를 '엄격 모드'로 사용
+
+```js
+'use strict';
+```
+
+> 'Strict Mode'는 ECMAScript 5 버전에 있는 새로운 기능으로써, 당신의 프로그램 또는 함수를 엄격한 운용 콘텍스트 안에서 실행시킬 수 있게끔 합니다. 이 엄격한 콘텍스트는 몇가지 액션들을 실행할 수 없도록 하며, 좀 더 많은 예외를 발생시킵니다.
+
+### 엄격 모드의 장점
+
+- 일반적인 코딩 실수에서 예외 처리
+- 안전하지 않은 액션에 대한 예외 처리 (ex: 전역 객체로 접근)
+- 혼란스럽거나 제대로 고려되지 않는 기능들을 비활성화
+
 ## JavaScript Libraries(Plugins)
 
 ### Respond
@@ -226,19 +242,13 @@ CSS @media 를 IE6 ~ IE8 버전에서 사용 가능하게 만들어주는 JavaSc
 
 HTML5 와 CSS3 에 정의된 요소(HTML Elements), 속성(CSS Property)들에 대한 지원 여부를 점검하는 JavaScript Library.
 
-> `Modernizr` 3.0 이후 버전에서는 'NPM'의 노드 모듈로 빌드 시스템을 제공합니다.
-
 ```html
 <script src="js/libs/modernizr-2.8.3.min.js"></script>
 ```
 
+> `Modernizr` 3.0 이후 버전에서는 'NPM'의 노드 모듈로 빌드 시스템을 제공합니다.
+
 #### 기본 설정
-
-기본적으로 `<html>` 에 `no-js` 클래스를 추가하세요.
-
-```html
-<html class="no-js">
-```
 
 #### CSS 사용법 예시
 
@@ -260,13 +270,21 @@ header {
 특정 기능이 동작하지 않을 경우 동작하는 추가 스크립트를 작성할 수 있습니다.
 
 ```js
+// SVG 사용이 가능한지 확인
 if (Modernizr.svg) console.log('svg: Available');
 
+// `input`요소의 `placeholder`속성 사용이 가능한지 확인
 if (!Modernizr.input.placeholder) {
     var script = document.createElement('script');
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/placeholders/4.0.1/placeholders.min.js';
     document.head.appendChild(script);
 }
+
+// CSS `@media`처럼 사용
+var minWidth1000 = Modernizr.mq('(min-width: 1000px)');
+if (minWidth1000) {
+  console.log('min-width: 1000px');
+} 
 ```
 
 ### Prefixfree
